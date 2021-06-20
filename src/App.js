@@ -4,13 +4,15 @@ import React from "react";
 // // import Test from "./components/Test";
 // import { list } from "./recipelist";
 // import UseStateBasics from "./hooks/UseStateBasics";
-import UseStateArray from "./hooks/UseStateArray";
+// import UseStateArray from "./hooks/UseStateArray";
+import UseStateObject from "./hooks/UseStateObject";
 
 function App() {
   return (
     <>
       {/* <UseStateBasics /> */}
-      <UseStateArray />
+      {/* <UseStateArray /> */}
+      <UseStateObject />
       {/* <MyHeader />
       <Header2 />
       <Header3 />
