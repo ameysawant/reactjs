@@ -3,16 +3,20 @@ import React from "react";
 // import MyHeader, { Header2, Header3 } from "./components/Header";
 // // import Test from "./components/Test";
 // import { list } from "./recipelist";
-// import UseStateBasics from "./hooks/UseStateBasics";
-// import UseStateArray from "./hooks/UseStateArray";
-import UseStateObject from "./hooks/UseStateObject";
+// import UseStateBasics from "./useState-hook/UseStateBasics";
+// import UseStateArray from "./useState-hook/UseStateArray";
+// import UseStateObject from "./useState-hook/UseStateObject";
+// import UseStateNumber from "./useState-hook/UseStateNumber";
+import UseEffectBasics from "./useEffect-hook/UseEffectBasics";
 
 function App() {
   return (
     <>
       {/* <UseStateBasics /> */}
       {/* <UseStateArray /> */}
-      <UseStateObject />
+      {/* <UseStateObject /> */}
+      {/* <UseStateNumber /> */}
+      <UseEffectBasics />
       {/* <MyHeader />
       <Header2 />
       <Header3 />

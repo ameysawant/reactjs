@@ -6,10 +6,16 @@ const UseStateArray = () => {
   //   console.log(value);
 
   const removeItem = (id) => {
-    let newArray = value.filter((mylist) => {
-      return mylist.id !== id; //   1
+    // let newArray = value.filter((mylist) => {
+    //   return mylist.id !== id; //   1
+    // });
+    // setValue(newArray);
+    setValue((oldValue) => {
+      let newArray = oldValue.filter((mylist) => {
+        return mylist.id !== id; //   1
+      });
+      return newArray;
     });
-    setValue(newArray);
   };
 
   const removeAll = () => {
