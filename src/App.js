@@ -7,7 +7,10 @@ import React from "react";
 // import UseStateArray from "./useState-hook/UseStateArray";
 // import UseStateObject from "./useState-hook/UseStateObject";
 // import UseStateNumber from "./useState-hook/UseStateNumber";
-import UseEffectBasics from "./useEffect-hook/UseEffectBasics";
+// import UseEffectBasics from "./useEffect-hook/UseEffectBasics";
+// import CleanupFunction from "./useEffect-hook/CleanupFunction";
+// import FetchData from "./useEffect-hook/FetchData";
+import ConditionalRendering from "./useEffect-hook/ConditionalRendering";
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
       {/* <UseStateArray /> */}
       {/* <UseStateObject /> */}
       {/* <UseStateNumber /> */}
-      <UseEffectBasics />
+      {/* <UseEffectBasics /> */}
+      {/* <CleanupFunction /> */}
+      {/* <FetchData /> */}
+      <ConditionalRendering />
       {/* <MyHeader />
       <Header2 />
       <Header3 />
