@@ -10,7 +10,9 @@ import React from "react";
 // import UseEffectBasics from "./useEffect-hook/UseEffectBasics";
 // import CleanupFunction from "./useEffect-hook/CleanupFunction";
 // import FetchData from "./useEffect-hook/FetchData";
-import ConditionalRendering from "./useEffect-hook/ConditionalRendering";
+// import ConditionalRendering from "./useEffect-hook/ConditionalRendering";
+// import ShortCircuit from "./useEffect-hook/ShortCircuit";
+import FormBasics from "./forms/FormBasics";
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
       {/* <UseEffectBasics /> */}
       {/* <CleanupFunction /> */}
       {/* <FetchData /> */}
-      <ConditionalRendering />
+      {/* <ConditionalRendering /> */}
+      {/* <ShortCircuit /> */}
+      <FormBasics />
       {/* <MyHeader />
       <Header2 />
       <Header3 />
