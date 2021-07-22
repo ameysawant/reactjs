@@ -12,7 +12,11 @@ import React from "react";
 // import FetchData from "./useEffect-hook/FetchData";
 // import ConditionalRendering from "./useEffect-hook/ConditionalRendering";
 // import ShortCircuit from "./useEffect-hook/ShortCircuit";
-import FormBasics from "./forms/FormBasics";
+// import FormBasics from "./forms/FormBasics";
+// import FormBasicsPart2 from "./forms/FormBasics-part-2";
+// import ReactHookForm from "./forms/ReactHookForm";
+// import ReactHookForm2 from "./forms/ReactHookForm2";
+import ReactHookFormPart2 from "./forms/ReactHookFormPart2";
 
 function App() {
   return (
@@ -26,7 +30,11 @@ function App() {
       {/* <FetchData /> */}
       {/* <ConditionalRendering /> */}
       {/* <ShortCircuit /> */}
-      <FormBasics />
+      {/* <FormBasics /> */}
+      {/* <FormBasicsPart2 /> */}
+      {/* <ReactHookForm /> */}
+      {/* <ReactHookForm2 /> */}
+      <ReactHookFormPart2 />
       {/* <MyHeader />
       <Header2 />
       <Header3 />
