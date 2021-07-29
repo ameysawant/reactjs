@@ -16,11 +16,34 @@ import React from "react";
 // import FormBasicsPart2 from "./forms/FormBasics-part-2";
 // import ReactHookForm from "./forms/ReactHookForm";
 // import ReactHookForm2 from "./forms/ReactHookForm2";
-import ReactHookFormPart2 from "./forms/ReactHookFormPart2";
+// import ReactHookFormPart2 from "./forms/ReactHookFormPart2";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./react-router/Home";
+import About from "./react-router/About";
+import Product from "./react-router/Product";
+import Contact from "./react-router/Contact";
+import PageNotFound from "./react-router/PageNotFound";
+import Nav from "./react-router/Nav";
+import ProductDetail from "./react-router/ProductDetail";
+import ProductAPI from "./react-router/ProductAPI";
+import ProductDetailAPI from "./react-router/ProductDetailAPI";
 
 function App() {
   return (
     <>
+      <BrowserRouter>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/product" component={Product} />
+          <Route path="/productdetail/:id" children={<ProductDetail />} />
+          <Route path="/productapi" component={ProductAPI} />
+          <Route path="/productdetailapi/:id" children={<ProductDetailAPI />} />
+          <Route path="/contact" component={Contact} />
+          <Route path="*" component={PageNotFound} />
+        </Switch>
+      </BrowserRouter>
       {/* <UseStateBasics /> */}
       {/* <UseStateArray /> */}
       {/* <UseStateObject /> */}
@@ -34,7 +57,7 @@ function App() {
       {/* <FormBasicsPart2 /> */}
       {/* <ReactHookForm /> */}
       {/* <ReactHookForm2 /> */}
-      <ReactHookFormPart2 />
+      {/* <ReactHookFormPart2 /> */}
       {/* <MyHeader />
       <Header2 />
       <Header3 />

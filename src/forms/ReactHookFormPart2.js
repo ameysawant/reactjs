@@ -20,11 +20,11 @@ Minimum eight characters, at least one uppercase letter, one lowercase letter, o
 */
 
 const ReactHookFormPart2 = () => {
-  // console.log(useForm());
-  const { register, handleSubmit, errors } = useForm({
+  console.log(useForm());
+  const { register, handleSubmit, errors, getValues } = useForm({
     mode: "onChange",
   });
-  console.log(errors);
+  // console.log(getValues);
   const submitForm = (data) => {
     console.log(data);
   };
@@ -134,6 +134,27 @@ const ReactHookFormPart2 = () => {
           placeholder="password"
         />
         <p className="red">{errors.password && errors.password.message}</p>
+
+        <input
+          className={errors.confirmPassword ? "red-border" : ""}
+          ref={register({
+            required: "confirmPassword is required",
+            pattern: {
+              value:
+                /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+              message:
+                "Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character",
+            },
+            validate: (value) =>
+              value === getValues("password") || "password not match",
+          })}
+          name="confirmPassword"
+          type="password"
+          placeholder="confirmPassword"
+        />
+        <p className="red">
+          {errors.confirmPassword && errors.confirmPassword.message}
+        </p>
 
         <select
           className={errors.country ? "red-border" : ""}
