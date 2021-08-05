@@ -17,21 +17,23 @@ import React from "react";
 // import ReactHookForm from "./forms/ReactHookForm";
 // import ReactHookForm2 from "./forms/ReactHookForm2";
 // import ReactHookFormPart2 from "./forms/ReactHookFormPart2";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./react-router/Home";
-import About from "./react-router/About";
-import Product from "./react-router/Product";
-import Contact from "./react-router/Contact";
-import PageNotFound from "./react-router/PageNotFound";
-import Nav from "./react-router/Nav";
-import ProductDetail from "./react-router/ProductDetail";
-import ProductAPI from "./react-router/ProductAPI";
-import ProductDetailAPI from "./react-router/ProductDetailAPI";
+// import { BrowserRouter, Route, Switch } from "react-router-dom";
+// import Home from "./react-router/Home";
+// import About from "./react-router/About";
+// import Product from "./react-router/Product";
+// import Contact from "./react-router/Contact";
+// import PageNotFound from "./react-router/PageNotFound";
+// import Nav from "./react-router/Nav";
+// import ProductDetail from "./react-router/ProductDetail";
+// import ProductAPI from "./react-router/ProductAPI";
+// import ProductDetailAPI from "./react-router/ProductDetailAPI";
+// import Usereducer from "./useReducer-hook/Usereducer";
+import LoginForm from "./useReducer-hook/LoginForm";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -43,7 +45,7 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route path="*" component={PageNotFound} />
         </Switch>
-      </BrowserRouter>
+      </BrowserRouter> */}
       {/* <UseStateBasics /> */}
       {/* <UseStateArray /> */}
       {/* <UseStateObject /> */}
@@ -64,6 +66,8 @@ function App() {
       {list.map((recipes) => {
         return <Dish {...recipes} key={recipes.id} />;
       })} */}
+      {/* <Usereducer /> */}
+      <LoginForm />
     </>
   );
 }

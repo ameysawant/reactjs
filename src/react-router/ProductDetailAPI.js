@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 
 const ProductDetailAPI = () => {
   const [product, setProduct] = useState({});
   const { id } = useParams(); //string
+  const { pathname } = useLocation();
+  console.log(pathname);
 
   useEffect(() => {
     getProduct();
@@ -38,6 +40,7 @@ const ProductDetailAPI = () => {
               <p>{product.description}</p>
               <p>{product.price}</p>
               <h6>{product.category}</h6>
+              {pathname === "/productdetailapi/3" && <button>more info</button>}
             </div>
           }
         </div>
