@@ -28,7 +28,8 @@ import React from "react";
 // import ProductAPI from "./react-router/ProductAPI";
 // import ProductDetailAPI from "./react-router/ProductDetailAPI";
 // import Usereducer from "./useReducer-hook/Usereducer";
-import LoginForm from "./useReducer-hook/LoginForm";
+// import LoginForm from "./useReducer-hook/LoginForm";
+import Home from "./contextAPI/Home";
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
       {/* <BrowserRouter>
         <Nav />
         <Switch>
-          <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/product" component={Product} />
           <Route path="/productdetail/:id" children={<ProductDetail />} />
@@ -67,7 +68,8 @@ function App() {
         return <Dish {...recipes} key={recipes.id} />;
       })} */}
       {/* <Usereducer /> */}
-      <LoginForm />
+      {/* <LoginForm /> */}
+      <Home />
     </>
   );
 }

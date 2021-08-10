@@ -16,6 +16,7 @@ const reducer = (state, action) => {
         loggedIn: true,
         username: "",
         password: "",
+        error: false,
       };
     case "ERROR":
       return {
@@ -25,7 +26,6 @@ const reducer = (state, action) => {
     case "LOGOUT":
       return {
         ...state,
-        error: false,
         loggedIn: false,
       };
     case "USERNAME":
